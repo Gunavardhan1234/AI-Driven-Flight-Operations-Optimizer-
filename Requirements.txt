@@ -1,0 +1,9 @@
+pandas>=1.5
+numpy
+scikit-learn
+networkx
+plotly
+streamlit
+joblib
+python-dateutil
+openpyxl
