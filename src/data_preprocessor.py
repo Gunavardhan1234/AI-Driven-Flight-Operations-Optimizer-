@@ -5,25 +5,6 @@
     4.do light parsing to convert std/atd/sta/ata to datetimes only for calculation,
     5.return a copy of dataframe with new columns appended.                                  """
 
-"""
-Preprocessing utilities that:
-- keep original columns intact (flight number, aircraft, from, to, std, atd, sta, ata),
-- remove rows where 'data' column equals '00:00:00' (if 'data' col exists),
-- add derived columns: departure_delay_mins, arrival_delay_mins,
-- do light parsing to convert std/atd/sta/ata to datetimes only for calculation,
-- return a copy of dataframe with new columns appended.
-"""
-
-"""
-Preprocessing utilities that:
-- keep original columns intact (flight number, aircraft, from, to, std, atd, sta, ata),
-- remove rows where 'data' column equals '00:00:00' (if 'data' col exists),
-- add derived columns: departure_delay_mins, arrival_delay_mins,
-- do light parsing to convert std/atd/sta/ata to datetimes only for calculation,
-- return a copy of dataframe with new columns appended,
-- allows direct execution to save processed Excel file.
-"""
-
 import pandas as pd
 import numpy as np
 from typing import Optional
